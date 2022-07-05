@@ -11,50 +11,26 @@ Side sheets are significantly larger than the Modals and hence they can accommod
 
 <Preview name='components-sidesheet-all--all'/>
 
-<Card shadow='none'>
-  <Table
-    showMenu={false}
-    separator={true}
-    data={[
-      {
-        Property: 'Default',
-        Value: '12 columns',
-        Configurable: '6 columns',
-      },
-      {
-        Property: 'Large',
-        Value: '12 columns',
-        Configurable: '10 columns',
-      },
-    ]}
-    schema={[
-      {
-        name: 'Property',
-        displayName: 'Size',
-        width: '34%',
-        sorting: false,
-        separator: true,
-        cellType: 'DEFAULT'
-      },
-      {
-        name: 'Value',
-        displayName: 'Breakpoint <= Small',
-        width: '33%',
-        sorting: false,
-        separator: true
-        
-      },
-      {
-        name: 'Configurable',
-        displayName: 'Breakpoint => Medium',
-        width: '33%',
-        sorting: false,
-        separator: true
-      },
-    ]}
-    withHeader={false}
-  />
-</Card>
+<table style="width: 100%">
+  <tbody>
+    <tr>
+      <th style="width:33%; text-align: left;">Size</th>
+      <th style="width:33%; text-align: left;">Breakpoint &#60;= Small</th>
+      <th style="width:33%; text-align: left;">Breakpoint =&#62; Medium</th>
+    </tr>
+    <tr style="vertical-align: top">
+      <td>Default</td>
+      <td>12 columns</td>
+      <td>6 columns</td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td>Large</td>
+      <td>12 columns</td>
+      <td>10 columns</td>
+    </tr>
+  </tbody>
+</table>
+
 <br/>
 <br/>
 
