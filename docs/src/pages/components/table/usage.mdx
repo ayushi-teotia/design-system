@@ -50,65 +50,35 @@ There are 3 types of sizes available for use which only differ in the vertical p
 
 <br/>
 
-<Card shadow='none'>
-  <Table
-    showMenu={false}
-    separator={true}
-    data={[
-      {
-        type: 'Standard',
-        header: '40px',
-        bodyv: '12px',
-        bodyh:'12px',
-      },
-      {
-        type: 'Compressed',
-        header: '32px',
-        bodyv: '8px',
-        bodyh:'12px',
-      },
-      {
-        type: 'Tight',
-        header: '32px',
-        bodyv: '4px',
-        bodyh:'12px',
-      },
-    ]}
-    schema={[
-      {
-        name: 'type',
-        displayName: 'Type',
-        width: '20%',
-        sorting: false,
-        separator: true,
-        cellType: 'DEFAULT'
-      },
-      {
-        name: 'header',
-        displayName: 'Header row height',
-        width: '20%',
-        sorting: false,
-        separator: true
-        
-      },
-      {
-        name: 'bodyv',
-        displayName: 'Body row padding (vertical)',
-        width: '30%',
-        sorting: false,
-        separator: true
-      },
-      {
-        name: 'bodyh',
-        displayName: 'Body row padding (horizontal)',
-        width: '30%',
-        sorting: false,
-        separator: true
-      },
-    ]}
-    withHeader={false}
-  />
-</Card>
+<table style="width: 100%">
+  <tbody>
+    <tr style="vertical-align: top">
+      <th style="width:25%; text-align: left;">Type</th>
+      <th style="width:25%; text-align: left;">Header row height</th>
+      <th style="width:25%; text-align: left;">Body row padding (vertical)</th>
+      <th style="width:25%; text-align: left;">Body row padding (horizontal)</th>
+    </tr>
+    <tr style="vertical-align: top">
+      <td>Standard</td>
+      <td>40px</td>
+      <td>12px</td>
+      <td>12px</td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td>Compressed</td>
+      <td>32px</td>
+      <td>8px</td>
+      <td>12px</td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td>Tight</td>
+      <td>32px</td>
+      <td>4px</td>
+      <td>12px</td>
+    </tr>
+  </tbody>
+</table>
+
 <br/>
 <br/>
 
@@ -199,7 +169,7 @@ This behavior is not available out of the box and hence a custom cell should be 
 
 #### Custom cell
 
-Standard table cells cover the most frequent use cases. For the other use cases, a custom cell can be created by using the **Emply Cell component**. Minimum padding of **12px** from either side of the empty cell is maintained.
+Standard table cells cover the most frequent use cases. For the other use cases, a custom cell can be created by using the **Empty Cell component**. Minimum padding of **12px** from either side of the empty cell is maintained.
 
 ![Custom cell](./images/table-6.png)
 
