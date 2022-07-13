@@ -11,7 +11,7 @@ export const data = [
   {
     link: 'avatar/usage',
     design: 'Available',
-    name: 'Avatars',
+    name: 'Avatar',
     code: 'Available',
     image: () => (
       <StaticImage
@@ -22,7 +22,7 @@ export const data = [
   },
   {
     link: 'badges/usage',
-    name: 'Badges',
+    name: 'Badge',
     design: "Available",
     code: "Available",
     image: () => (
